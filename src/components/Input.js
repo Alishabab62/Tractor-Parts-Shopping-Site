@@ -8,6 +8,9 @@ export default function Input(props) {
         placeholder={props.placeholder}
         name={props.name}
         onChange={props.fun}
+        min={props.min}
+        max={props.max}
+        value={props.value}
       />
     </div>
   );

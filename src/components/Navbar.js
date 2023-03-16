@@ -14,7 +14,9 @@ export default function Navbar() {
             <li>Sell Tractors</li>
           </ul>
         </li>
+        <Link to="/parts">
         <li>Parts & Accessories</li>
+        </Link>
         <li>
           Services
           <ul>
