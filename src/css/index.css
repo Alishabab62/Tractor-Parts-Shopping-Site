@@ -259,7 +259,7 @@ input[type="date"] {
 
 .main-products-wrapper{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin: 30px;
@@ -274,6 +274,8 @@ input[type="date"] {
 }
 .product-image-wrapper img{
   width: 100%;
+  object-fit: cover;
+  height: 300px;
 }
 .product-image-wrapper .heart-icon{
   position: absolute;
@@ -285,10 +287,11 @@ input[type="date"] {
 .product-image-wrapper .product-add-to-cart-button{
   position: absolute;
   display: none;
-  border: 1px solid #080e09;
-  padding: 8px 90px;
-  bottom: 20px;
-  left: 15%;
+  border: 1px solid #fbc740;
+  color: #fbc740;
+  padding: 10px 90px;
+  bottom: 30px;
+  left: 3%;
   text-align: center;
   cursor: pointer;
 }

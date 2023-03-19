@@ -1,14 +1,20 @@
 import React from 'react'
-import Input from './Input'
-export default function Filter() {
+import Input from './Input';
+export default function Filter(props) {
     let [rangeValue , setRangeValue] = React.useState(0)
     function handlePrice(e){
-        console.log(e.target.value)
         setRangeValue(e.target.value)
     }
+
     function handleCheck(e){
-        console.log(e.target.value)
+      if(e.target.checked){
+        props.fun(e.target.value)
+      }
+      else{
+        props.fun()
+      }
     }
+
   return (
     <div className='filter-main-wrapper'>
       <div className='filter-heading'>Filter</div>
@@ -16,7 +22,7 @@ export default function Filter() {
       <div><span>Price {rangeValue}</span><Input type={"range"} fun={handlePrice} min={"0"} max={"15000"} value={rangeValue} /></div>
       </div>
       <div className='filter-tractor-wrapper'>
-        <span>Tractor</span>
+      <span>Tractor</span>
       <div><Input type={"checkbox"} fun={handleCheck}  value={"Johndeer"}/> <span>Johndeer</span></div>
       <div><Input type={"checkbox"} fun={handleCheck}  value={"Mahindra"}/> <span>Mahindra</span></div>
       <div><Input type={"checkbox"} fun={handleCheck}  value={"Powertrack"}/> <span>Powertrack</span></div>
