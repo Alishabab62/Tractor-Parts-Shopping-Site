@@ -15,7 +15,7 @@ export default function WishList() {
         window.location.href = '/login'
       }
     })
-  },[])
+  },[]) 
 
   return (
     <div>
