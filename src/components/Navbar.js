@@ -1,4 +1,6 @@
 import React from "react";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
@@ -27,6 +29,14 @@ export default function Navbar() {
         <li>Site Map</li>
         <li>FAQ</li>
       </ul>
+      <div style={{marginRight:"20px"}}>
+        <Link to={"/wishlist"}>
+        <FavoriteBorderIcon/>
+        </Link>
+        <Link to={"/kart"}>
+        <AddShoppingCartIcon/>
+        </Link>
+      </div>
     </nav>
   );
 }

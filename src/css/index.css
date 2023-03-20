@@ -36,6 +36,9 @@ header .right-header button:hover {
 nav {
   background-color: #7fa35c;
   border-top: 5px solid #080e09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -85,6 +88,11 @@ nav ul li:hover > ul {
 nav a {
   text-decoration: none;
 }
+nav svg{
+  margin: 0px 10px;
+  color: #080e09;
+  cursor: pointer;
+}
 footer {
   display: flex;
   width: 100%;
@@ -109,7 +117,7 @@ footer h3 {
 footer h2 {
   color: #4c5270;
 }
-svg {
+footer svg {
   margin: 0px 5px;
   width: 50px;
   font-size: 400px;
@@ -182,10 +190,12 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 182px;
+  padding: 30px 60px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: -0px -0px 5px 5px rgba(128, 128, 128, 0.645);
+  top:100px;
+  left: 155px;
 }
 .signup-main-wrapper .signup-wrapper {
   text-align: center;
@@ -210,7 +220,7 @@ footer ul li {
   color: #4c5270;
 }
 .signup-main-wrapper .signup-wrapper button {
-  width: 100%;
+  width: 101%;
   height: 30px;
   margin: 5px 0px;
   padding-left: 5px;
@@ -264,6 +274,7 @@ input[type="date"] {
   grid-row-gap: 30px;
   margin: 30px;
   width: 85%;
+  position: relative;
 }
 
 .product-image-wrapper{

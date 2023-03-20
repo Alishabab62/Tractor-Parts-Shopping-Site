@@ -37,12 +37,12 @@ export default function Login() {
           if (result.status === 200) {
             setAlertSuccess(true);
             setResponseTime(false);
+            localStorage.setItem("userTractor" , JSON.stringify(result.data))
             window.location.href = "/";
             setTimeout(() => {
               setAlertSuccess(false);
             }, 3000);
           }
-          console.log(result);
         })
         .catch((error) => {
           console.log(error);

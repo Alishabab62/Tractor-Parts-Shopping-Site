@@ -48,18 +48,17 @@ export default function Signup() {
           dob: `${inputs.dob}`,
           password: `${inputs.password}`,
         };
-        console.log(data);
         setResponseTime(true);
         const url = "https://tractor.onrender.com/signup";
         axios
-          .post(url, data)
-          .then((res) => {
-            console.log(res.status);
-            if (res.status === 201) {
+        .post(url, data)
+        .then((res) => {
+          console.log(res);
+          if (res.status === 201) {
               setAlertSuccess(true);
               setResponseTime(false);
               setTimeout(() => {
-                window.location.href = "/";
+                window.location.href = "/login";
               }, 500);
             }
             setTimeout(() => {
