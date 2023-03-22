@@ -28,11 +28,17 @@ header .right-header button {
   border-radius: 5px;
   color: #4c5270;
   cursor: pointer;
-  transition: 0.5 ease-in background;
+  background-color: #7fa35c;
+  color: white;
+  transition: 0.9 ease-in background;
 }
 header .right-header button:hover {
   background-color: antiquewhite;
+  color: black;
 }
+
+/* nav */
+
 nav {
   background-color: #7fa35c;
   border-top: 5px solid #080e09;
@@ -93,6 +99,9 @@ nav svg{
   color: #080e09;
   cursor: pointer;
 }
+
+/* footer */
+
 footer {
   display: flex;
   width: 100%;
@@ -129,6 +138,9 @@ footer ul {
 footer ul li {
   padding: 5px 0px;
 }
+
+
+/* home page images */
 
 .body-images {
   display: flex;
@@ -172,6 +184,9 @@ footer ul li {
   object-fit: cover;
   cursor: pointer;
 }
+
+
+/* signup-wrapper */
 
 .signup-main-wrapper {
   width: 100%;
@@ -239,6 +254,9 @@ input[type="date"] {
   background-color: #fbc740;
 }
 
+
+/* filter wrapper */
+
 .filter-main-wrapper {
   width: 15%;
   border-right: 1px solid rgba(128, 128, 128, 0.363);
@@ -263,10 +281,12 @@ input[type="date"] {
   margin-left: 5px;
 }
 
+
+/* product wrapper */
+
 .parts-main-wrapper {
   display: flex;
 }
-
 .main-products-wrapper{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -326,6 +346,9 @@ input[type="date"] {
   color: grey;
 }
 
+
+/* wishlist wrapper */
+
 .main-wishlist-wrapper{
   width: 100%;
   display: flex;
@@ -381,4 +404,121 @@ input[type="date"] {
   border-bottom: 2px solid #4c5270;
   padding-bottom: 5px;
   font-weight: bold;
+}
+
+
+/* kart wrapper */
+
+.kart-wrapper-main{
+  display: flex;
+  justify-content: center; 
+  margin: 32px 0px;
+}
+.kart-wrapper-main > .kart-wrapper-details{
+  margin: 0px 0px 0px 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: fit-content;
+}
+.kart-wrapper-main .kart-product{
+  /* margin: 32px 0px 32px 200px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: fit-content;
+}
+.kart-wrapper-main .kart-wrapper-details{
+  width: 400px;
+  padding: 20px;
+}
+.kart-wrapper-details .pin-code-wrapper{
+  display: flex;
+  margin: 20px 0px 20px 0px;
+}
+.kart-wrapper-details .pin-code-wrapper div input{
+  height: 40px;
+  width: 273px;
+  padding-left: 5px;
+  border: 1px solid #4c5270;
+  border-right: none;
+  margin-right: 0.1px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  outline: none;
+}
+.kart-wrapper-details .pin-code-wrapper >  div > button{
+  border: none;
+  height: 42px;
+  width: 120px;
+  background-color: #7fa35c;
+  color: white;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.kart-wrapper-details .pin-code-wrapper input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+}
+.kart-wrapper-details > div button{
+  width: 100%;
+  height: 40px;
+  background-color: #7fa35c;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.kart-wrapper-details .kart-total-price , .kart-discount-price , .kart-total-product, .kart-total-after-discount-price{
+  color: #080e09;
+  margin: 5px 0px;
+}
+
+.kart-wrapper-details .kart-discount-price {
+  font-weight: bold;
+}
+.kart-wrapper-main .kart-product-wrapper {
+  display: flex;
+  border: 1px solid #4c5270;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 32px 16px;
+}
+.kart-wrapper-main .kart-product-wrapper img{
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+}
+.kart-wrapper-main .product-details{
+  padding-left: 10px;
+  padding-right: 50px;
+  width: 100%;
+}
+.kart-wrapper-main .product-details button{
+  border: none;
+  width: 100%;
+  padding: 8px 8px;
+  margin: 3px 0px;
+  background-color: #fbc740;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.kart-wrapper-main .kart-increment-decrement{
+  display: flex;
+  align-items: center;
+}
+.kart-wrapper-main .kart-increment-decrement button{
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 3px 5px 4px 5px;
+}
+.kart-wrapper-main .kart-increment-decrement p{
+  padding: 1.8px 4px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }

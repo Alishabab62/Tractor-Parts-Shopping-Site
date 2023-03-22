@@ -58,6 +58,7 @@ export default function Products(props) {
       <LinearProgress variant="determinate" value={progress} style={{height:"10px"}} />
       </div> : "" } */}
       {result.map((item, index) => {
+        let discountPrice = Math.floor((item.discount*item.price)/100);
         return (
           <div className="product-wrapper" key={item._id}>
             <div className="product-image-wrapper">
@@ -76,8 +77,8 @@ export default function Products(props) {
               <h5>Tractor - {item.tractor}</h5>
             </div>
             <div className="product-price-wrapper">
-              <h5>Rs.{item.price}</h5>
-              <h5 className="product-discount-price">Rs.450</h5>
+              <h5>Rs.{item.price-discountPrice}</h5>
+              <h5 className="product-discount-price">Rs.{item.price}</h5>
               <h5>({item.discount}%)</h5>
             </div>
           </div>
